@@ -28,6 +28,7 @@
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkRequest>
 #include <QtNetwork/QNetworkReply>
+#include <QtCore/QDir>
 #include <QtCore/QFile>
 
 class Downloader : public InfoWidget
@@ -47,6 +48,9 @@ private:
     QString absFileName;
     QString fileName;
     QFile *file;
+    QFile *downloadConfFile;
+    QDir configurationDir;
+    QDir downloadsDir;
     bool finishedDownloading;
 private slots:
     void setProgress(qint64 received, qint64 total);

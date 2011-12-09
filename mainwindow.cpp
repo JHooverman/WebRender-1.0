@@ -431,7 +431,7 @@ void MainWindow::loadHomePage()
 void MainWindow::GoToAddress()
 {
 	link = addressBar->text();
-	if(!link.contains("http://") && !link.contains("ftp://") && !link.contains("file://"))
+	if(!link.contains("http://") && !link.contains("https://") && !link.contains("file://"))
 	{
 		link = QString("http://") + link;
 	}

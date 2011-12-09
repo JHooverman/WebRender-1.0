@@ -21,9 +21,11 @@
 #include <QtCore/QFile>
 #include <QtCore/QString>
 #include <QtGui/QFileDialog>
+#include <QtCore/QFile>
+#include <QtCore/QTextStream>
 #include <QtCore/QFileInfo>
 #include <QtCore/QByteArray>
-#include <QtCore/QDir>
+
 #include <QtCore/QUrl>
 #include <QtGui/QMessageBox>
 
@@ -43,6 +45,13 @@ Downloader::Downloader(QWidget *parent)
     setLayout(mainLayout);
     setTitle("Downloader");
 	finishedDownloading = false;
+
+	configurationDir = QDir::home();
+	configurationDir.cd(".WebRender");
+	downloadConfFile = new QFile(configurationDir.absoluteFilePath("download.path"));
+	downloadConfFile->open(QIODevice::ReadOnly);
+	QTextStream stream(downloadConfFile);
+	downloadsDir = QDir(stream.readAll());
 }
 
 bool Downloader::handleDownloadRequest(QNetworkAccessManager *manager, QNetworkRequest &request)
@@ -59,7 +68,7 @@ bool Downloader::handleDownloadRequest(QNetworkAccessManager *manager, QNetworkR
     fileName = QFileInfo(url.path()).fileName();
 	if(QMessageBox::question(this,tr("Download the file?"),tr("Do you really wish to download ") + fileName) != QMessageBox::Ok)
 		return false;
-    absFileName = QFileDialog::getSaveFileName(this,tr("Save file to disk"),QDir(QDir::homePath()).absoluteFilePath(fileName));
+    absFileName = downloadsDir.absoluteFilePath(fileName);
     if(absFileName.isEmpty())
         return false;
     file = new QFile(absFileName);

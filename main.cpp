@@ -22,21 +22,41 @@
 #include <QtCore/QCoreApplication>
 #include <QtCore/QString>
 #include <QtCore/QStringList>
+#include <QtCore/QFile>
+#include <QtCore/QTextStream>
+#include <QtCore/QDir>
 #include <QtCore/QUrl>
 #include "mainwindow.h"
+#include "SetupAssistant.h"
 
 int main(int argc, char* argv[])
 {
 	QApplication app(argc, argv);
         QCoreApplication::setApplicationName(QString("WebRender"));
         QCoreApplication::setOrganizationName(QString("WebRender"));
-	MainWindow *window = new MainWindow;
-        if(app.arguments().count() > 1)
-        {
-            QUrl url = QUrl(app.arguments().at(1));
-            url.setScheme("file");
-            window->loadUrl(url);
-        }
-	window->show();
+	QDir confDir = QDir::home();
+	bool confDirExists = confDir.cd(".WebRender");
+	QFile versionFile(confDir.absoluteFilePath("version.info"));
+	bool confFileExists = versionFile.open(QIODevice::ReadOnly);
+	bool currentVersion;
+	if(confFileExists) {
+		QTextStream stream(&versionFile);
+		currentVersion = (stream.readAll() == "RC 3");
+	} else {
+		currentVersion = false;
+	}
+	if(confDirExists && confFileExists && currentVersion) {
+		MainWindow *window = new MainWindow;
+        	if(app.arguments().count() > 1)
+        	{
+        	    QUrl url = QUrl(app.arguments().at(1));
+        	    url.setScheme("file");
+        	    window->loadUrl(url);
+        	}
+		window->show();
+	} else {
+		SetupAssistant *setupAssistant = new SetupAssistant;
+		setupAssistant->showAnimated();
+	}
 	return app.exec();
 }

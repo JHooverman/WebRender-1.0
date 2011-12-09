@@ -16,7 +16,6 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor,
  * Boston, MA  02110-1301  USA
  */
-
 #include "about.h"
 #include <QtGui/QPixmap>
 
@@ -31,7 +30,7 @@ AboutDialog::AboutDialog(QWidget *parent)
 	authorEmailLayout = new QHBoxLayout;
 	buttonLayout = new QHBoxLayout;
 	webrenderLabel = new QLabel(tr("<b>WebRender</b>"));
-	versionLabel = new QLabel(tr("Version 1.0 beta2"));
+	versionLabel = new QLabel(tr("Version 1.0 RC3"));
 	authorNameLabel = new QLabel(tr("by <b>Anand Bose</b>"));
 	authorEmailLabel = new QLabel(tr("Email: anandbose@in.com"));
 	closeButton = new QPushButton(tr("Close"));

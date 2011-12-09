@@ -29,7 +29,14 @@ HEADERS += about.h \
            tab.h \
            tabview.h \
            toolbar.h \
-           toolbutton.h
+           toolbutton.h \
+	   DownloadSetup.h \
+	   FinishSetup.h \
+	   LicenseReader.h \
+	   pixmap.h \
+	   SetupAssistant.h \
+	   WebRenderAnimation.h \
+	   WelcomeView.h
 SOURCES += about.cpp \
            addbookmarkwindow.cpp \
            addressbar.cpp \
@@ -50,5 +57,12 @@ SOURCES += about.cpp \
            tab.cpp \
            tabview.cpp \
            toolbar.cpp \
-           toolbutton.cpp
+           toolbutton.cpp \
+	   DownloadSetup.cpp \
+	   FinishSetup.cpp \
+	   LicenseReader.cpp \
+	   pixmap.cpp \
+	   SetupAssistant.cpp \
+	   WebRenderAnimation.cpp \
+	   WelcomeView.cpp
 RESOURCES += resources.qrc

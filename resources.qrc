@@ -44,5 +44,42 @@
 	<file>icons/bugs.png</file>
 	<file>icons/reload-toolbutton.png</file>
 	<file>icons/prefs.png</file>
+
+	<file>images/SetupAssistant/01.png</file>
+	<file>images/SetupAssistant/02.png</file>
+	<file>images/SetupAssistant/03.png</file>
+	<file>images/SetupAssistant/04.png</file>
+	<file>images/SetupAssistant/05.png</file>
+	<file>images/SetupAssistant/06.png</file>
+	<file>images/SetupAssistant/07.png</file>
+	<file>images/SetupAssistant/08.png</file>
+	<file>images/SetupAssistant/09.png</file>
+	<file>images/SetupAssistant/10.png</file>
+	<file>images/SetupAssistant/11.png</file>
+	<file>images/SetupAssistant/12.png</file>
+	<file>images/SetupAssistant/13.png</file>
+	<file>images/SetupAssistant/14.png</file>
+	<file>images/SetupAssistant/15.png</file>
+	<file>images/SetupAssistant/webrender-bg.png</file>
+	<file>images/SetupAssistant/next.png</file>
+	<file>images/SetupAssistant/downloads.png</file>
+	<file>images/SetupAssistant/finish.png</file>
+	<file>images/SetupAssistant/webrender.png</file>
+	<file>images/SetupAssistant/glow.png</file>
+	<file>images/SetupAssistant/angrybirds.png</file>
+	<file>images/SetupAssistant/blogger.png</file>
+	<file>images/SetupAssistant/facebook.png</file>
+	<file>images/SetupAssistant/gmail.png</file>
+	<file>images/SetupAssistant/googlemusic.png</file>
+	<file>images/SetupAssistant/googleplus.png</file>
+	<file>images/SetupAssistant/skype.png</file>
+	<file>images/SetupAssistant/youtube.png</file>
+	<file>images/SetupAssistant/linkedin.png</file>
+	<file>images/SetupAssistant/myspace.png</file>
+	<file>images/SetupAssistant/orkut.png</file>
+	<file>images/SetupAssistant/twitter.png</file>
+	<file>images/SetupAssistant/ubuntuone.png</file>
+	<file>images/SetupAssistant/yahoo.png</file>
+
     </qresource>
 </RCC>

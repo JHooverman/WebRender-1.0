@@ -69,7 +69,7 @@
 #include "toolbar.h"
 #include "backforward.h"
 #include "toolbutton.h"
-
+#include "SetupAssistant.h"
 class MainWindow : public QMainWindow
 {
 	Q_OBJECT
@@ -190,6 +190,7 @@ class MainWindow : public QMainWindow
 	QAction *reloadAction;
 	QAction *stopAction;
 	QAction *websiteIconAction;
+	SetupAssistant *setupAssistant;
     private slots:
 	void GoToAddress();
 	void setAddressBarUrl(const QUrl &url);//
