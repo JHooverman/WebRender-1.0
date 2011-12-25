@@ -18,7 +18,7 @@ LicenseReader::LicenseReader(QWidget *parent) : QWidget(parent) {
 	setLayout(mainLayout);
 	setFixedSize(810,610);
 
-	QFile file("LICENSE.GPL3");
+	QFile file(":/LICENSE.GPL3");
 	file.open(QIODevice::ReadOnly);
 	QTextStream stream(&file);
 	textEdit->setText(stream.readAll());
