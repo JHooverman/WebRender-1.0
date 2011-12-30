@@ -81,5 +81,8 @@
 	<file>images/SetupAssistant/ubuntuone.png</file>
 	<file>images/SetupAssistant/yahoo.png</file>
 	<file>LICENSE.GPL3</file>
+
+	<file>images/AboutWindow/background.png</file>
+	<file>images/AboutWindow/close.png</file>
     </qresource>
 </RCC>

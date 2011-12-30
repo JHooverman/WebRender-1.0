@@ -118,7 +118,7 @@ class MainWindow : public QMainWindow
         QWidget *addressBarWidget;
         QSplitter *toolBarSplitter;
         SourceView *sourceview;
-        AboutDialog *aboutDialog;
+        About *aboutDialog;
 	PreferenceWindow *preferenceWindow;
         HistoryViewer *historyViewer;
         QCompleter *addressCompleter;

@@ -1,74 +1,137 @@
-/*
- * Copyright 2011 Anand Bose <anandbose@in.com>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor,
- * Boston, MA  02110-1301  USA
- */
 #include "about.h"
 #include <QtGui/QPixmap>
+#include <QtGui/QFont>
+#include <QtCore/QPointF>
 
-AboutDialog::AboutDialog(QWidget *parent)
-{
-	imageLabel = new QLabel;
-	imageLabel->setPixmap(QPixmap(":/icons/webrender2.png").scaled(64,64));
-	imageLayout = new QHBoxLayout;
-	webrenderLayout = new QHBoxLayout;
-	versionLayout = new QHBoxLayout;
-	authorNameLayout = new QHBoxLayout;
-	authorEmailLayout = new QHBoxLayout;
-	buttonLayout = new QHBoxLayout;
-	webrenderLabel = new QLabel(tr("<b>WebRender</b>"));
-	versionLabel = new QLabel(tr("Version 1.0 RC3"));
-	authorNameLabel = new QLabel(tr("by <b>Anand Bose</b>"));
-	authorEmailLabel = new QLabel(tr("Email: anandbose@in.com"));
-	closeButton = new QPushButton(tr("Close"));
-	mainLayout = new QVBoxLayout;
-
-	imageLayout->addStretch();
-	imageLayout->addWidget(imageLabel);
-	imageLayout->addStretch();
-
-	webrenderLayout->addStretch();
-	webrenderLayout->addWidget(webrenderLabel);
-	webrenderLayout->addStretch();
-
-	versionLayout->addStretch();
-	versionLayout->addWidget(versionLabel);
-	versionLayout->addStretch();
-
-	authorNameLayout->addStretch();
-	authorNameLayout->addWidget(authorNameLabel);
-	authorNameLayout->addStretch();
-
-	authorEmailLayout->addStretch();
-	authorEmailLayout->addWidget(authorEmailLabel);
-	authorEmailLayout->addStretch();
-
-	buttonLayout->addStretch();
-	buttonLayout->addWidget(closeButton);
-	buttonLayout->addStretch();
+About::About(QWidget *parent) : QGraphicsView(parent) {
+	scene = new QGraphicsScene;
+	scene->setSceneRect(0,0,500,300);
+	bgPixmap = new Pixmap(QPixmap(":/images/AboutWindow/background.png"));
+	bgPixmap->setPos(0,0);
+	icon = new Pixmap(QPixmap(":/icons/webrender.png"));
+	closeButton = new Pixmap(QPixmap(":/images/AboutWindow/close.png"));
 
 
-	mainLayout->addLayout(imageLayout);
-	mainLayout->addLayout(webrenderLayout);
-	mainLayout->addLayout(versionLayout);
-	mainLayout->addLayout(authorNameLayout);
-	mainLayout->addLayout(authorEmailLayout);
-	mainLayout->addLayout(buttonLayout);
-	mainLayout->setContentsMargins(5,25,5,5);
-	setLayout(mainLayout);
-	setTitle("About WebRender");
+	headerTextItem = new QGraphicsTextItem(tr("WebRender"));
+	headerTextItem->setFont(QFont("sans",25));
+	versionTextItem = new QGraphicsTextItem(tr("Release Candidate 4"));
+	versionTextItem->setFont(QFont("sans",10));
+	subHeaderTextItem = new QGraphicsTextItem(tr("Brought to you by,"));
+	subHeaderTextItem->setFont(QFont("sans",10, 75));
+	textItem1 = new QGraphicsTextItem(tr("Anand Bose (Software Developer)"));
+	textItem1->setFont(QFont("sans",10));
+	textItem2 = new QGraphicsTextItem(tr("Jaideep Sasi (Mac OS X deployment)"));
+	textItem2->setFont(QFont("sans",10));
+
+	timer = new QTimer;
+	timer->setSingleShot(true);
+
+	stateMachine = new QStateMachine;
+	initialState = new QState;
+	finalState = new QState;
+
+	initialState->assignProperty(icon, "pos", QPointF(122,5));
+	initialState->assignProperty(closeButton, "pos", QPointF(375,270));
+	initialState->assignProperty(headerTextItem, "pos", QPointF(255,0));
+	initialState->assignProperty(versionTextItem, "pos", QPointF(255,0));
+	initialState->assignProperty(subHeaderTextItem, "pos", QPointF(255,0));
+	initialState->assignProperty(textItem1, "pos", QPointF(255,0));
+	initialState->assignProperty(textItem2, "pos", QPointF(255,0));
+
+	initialState->assignProperty(icon, "opacity", 0.0);
+	initialState->assignProperty(closeButton, "opacity", 0.0);
+	initialState->assignProperty(headerTextItem, "opacity", 0.0);
+	initialState->assignProperty(versionTextItem, "opacity", 0.0);
+	initialState->assignProperty(subHeaderTextItem, "opacity", 0.0);
+	initialState->assignProperty(textItem1, "opacity", 0.0);
+	initialState->assignProperty(textItem2, "opacity", 0.0);
+
+	finalState->assignProperty(icon, "pos", QPointF(0,5));
+	finalState->assignProperty(closeButton, "pos", QPointF(425,270));
+	finalState->assignProperty(headerTextItem, "pos", QPointF(255,45));
+	finalState->assignProperty(versionTextItem, "pos", QPointF(255,80));
+	finalState->assignProperty(subHeaderTextItem, "pos", QPointF(255,125));
+	finalState->assignProperty(textItem1, "pos", QPointF(255,141));
+	finalState->assignProperty(textItem2, "pos", QPointF(255,157));
+
+	finalState->assignProperty(icon, "opacity", 1.0);
+	finalState->assignProperty(closeButton, "opacity", 1.0);
+	finalState->assignProperty(headerTextItem, "opacity", 1.0);
+	finalState->assignProperty(versionTextItem, "opacity", 0.6);
+	finalState->assignProperty(subHeaderTextItem, "opacity", 1.0);
+	finalState->assignProperty(textItem1, "opacity", 1.0);
+	finalState->assignProperty(textItem2, "opacity", 1.0);
+
+	transition = initialState->addTransition(timer, SIGNAL(timeout()), finalState);
+
+	animation = new QPropertyAnimation(icon, "pos");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+	animation = new QPropertyAnimation(closeButton, "pos");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+	animation = new QPropertyAnimation(headerTextItem, "pos");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+	animation = new QPropertyAnimation(versionTextItem, "pos");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+	animation = new QPropertyAnimation(subHeaderTextItem, "pos");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+	animation = new QPropertyAnimation(textItem1, "pos");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+	animation = new QPropertyAnimation(textItem2, "pos");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+
+	animation = new QPropertyAnimation(icon, "opacity");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+	animation = new QPropertyAnimation(closeButton, "opacity");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+	animation = new QPropertyAnimation(headerTextItem, "opacity");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+	animation = new QPropertyAnimation(versionTextItem, "opacity");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+	animation = new QPropertyAnimation(subHeaderTextItem, "opacity");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+	animation = new QPropertyAnimation(textItem1, "opacity");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+	animation = new QPropertyAnimation(textItem2, "opacity");
+	animation->setDuration(800);
+	transition->addAnimation(animation);
+
+
+	stateMachine->addState(initialState);
+	stateMachine->addState(finalState);
+	stateMachine->setInitialState(initialState);
+
+	scene->addItem(bgPixmap);
+	scene->addItem(icon);
+	scene->addItem(closeButton);
+	scene->addItem(headerTextItem);
+	scene->addItem(versionTextItem);
+	scene->addItem(subHeaderTextItem);
+	scene->addItem(textItem1);
+	scene->addItem(textItem2);
+
+
+	setScene(scene);
+	setFixedSize(502,302);
+
 	connect(closeButton,SIGNAL(clicked()),this,SLOT(close()));
+	connect(closeButton, SIGNAL(clicked()), stateMachine, SLOT(stop()));
+}
+
+void About::showAnimated() {
+	stateMachine->start();
+	timer->start(100);
+	show();
 }

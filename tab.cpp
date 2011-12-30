@@ -157,6 +157,8 @@ void Tab::mousePressEvent(QMouseEvent *event)
 			tabMenu->popup(mapToGlobal(QPoint(0,25)));
 		}
 		emit clicked(index);
+	} else if(event->button() & Qt::MiddleButton) {
+		_closeTab();
 	}
 	update();
 	QWidget::mousePressEvent(event);

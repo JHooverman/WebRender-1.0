@@ -290,7 +290,7 @@ bool MainWindow::setupShortcutKeys()
 	new QShortcut(QKeySequence(tr("F11")),this,SLOT(showFullScreen()));
 	new QShortcut(QKeySequence(tr("Shift+F11")),this,SLOT(showNormal()));
 	new QShortcut(QKeySequence(QKeySequence::AddTab),this,SLOT(newTab()));
-        new QShortcut(QKeySequence(QKeySequence::HelpContents),aboutDialog,SLOT(show()));
+        new QShortcut(QKeySequence(QKeySequence::HelpContents),aboutDialog,SLOT(showAnimated()));
 	new QShortcut(QKeySequence(tr("Ctrl+H")),this,SLOT(showHistoryWindow()));
 	new QShortcut(QKeySequence(QKeySequence::Save),this,SLOT(saveToLocalFile()));
 	new QShortcut(QKeySequence(QKeySequence::Find),this,SLOT(doFindText()));
@@ -339,7 +339,7 @@ bool MainWindow::setupToolBar()
 }
 bool MainWindow::loadWidgets()
 {
-    aboutDialog = new AboutDialog;
+    aboutDialog = new About;
     historyViewer = new HistoryViewer;
     historyViewer->setHistory(history);
     sourceview = new SourceView;
@@ -743,7 +743,7 @@ bool MainWindow::createConnections()
 {
 	connect(addressBar, SIGNAL(GoClicked()), this, SLOT(GoToAddress()));
 	connect(addressBar, SIGNAL(returnPressed()), this , SLOT(GoToAddress()));
-        connect(aboutAction, SIGNAL(triggered()), aboutDialog , SLOT(show()));
+        connect(aboutAction, SIGNAL(triggered()), aboutDialog , SLOT(showAnimated()));
         connect(showWebInspectorAction, SIGNAL(triggered()), this, SLOT(showWebInspector()));
         connect(privateBrowsingAction, SIGNAL(toggled(bool)), this, SLOT(setPrivateBrowsing(bool)));
         connect(showAllHistoryAction, SIGNAL(triggered()), this, SLOT(showHistoryWindow()));
