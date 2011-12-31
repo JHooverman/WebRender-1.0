@@ -124,8 +124,8 @@ About::About(QWidget *parent) : QGraphicsView(parent) {
 
 
 	setScene(scene);
-	setFixedSize(502,302);
-
+	setFixedSize(505,305);
+	setWindowTitle(tr("About WebRender"));
 	connect(closeButton,SIGNAL(clicked()),this,SLOT(close()));
 	connect(closeButton, SIGNAL(clicked()), stateMachine, SLOT(stop()));
 }
