@@ -34,8 +34,8 @@ void ToolBar::paintEvent(QPaintEvent *event)
 	painter.setRenderHint(QPainter::Antialiasing, true);
 	painter.setPen(Qt::NoPen);
 	QLinearGradient gradient(0,0,0,height());
-	gradient.setColorAt(0.0,QColor("#000000")); //#EEEEEE
-	gradient.setColorAt(1.0,QColor("#111111")); //#CCCCCC
+        gradient.setColorAt(0.0,QColor("#FFFFFF")); //#EEEEEE
+	gradient.setColorAt(1.0,QColor("#CCCCCC")); //#CCCCCC
 	painter.setBrush(gradient);
 	painter.drawRect(0,0,width(),height());
 	QPainter WidgetPainter(this);

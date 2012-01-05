@@ -5,6 +5,7 @@
 #include <QtGui/QMessageBox>
 #include "mainwindow.h"
 SetupAssistant::SetupAssistant(QWidget *parent) : QWidget(parent) {
+        desktopWidget = new QDesktopWidget;
 	welcomeView = new WelcomeView(this);
 	licenseReader = new LicenseReader(this);
 	downloadSetup = new DownloadSetup(this);
@@ -67,6 +68,7 @@ SetupAssistant::SetupAssistant(QWidget *parent) : QWidget(parent) {
 void SetupAssistant::showAnimated()
 {
 	this->show();
+        this->move((desktopWidget->availableGeometry(this).width()/2)- width()/2,(desktopWidget->availableGeometry(this).height()/2)- height()/2);
 	welcomeView->startAnimation();
 }
 

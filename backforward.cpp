@@ -37,8 +37,8 @@ void BackForwardButtonGroup::paintEvent(QPaintEvent *event)
 	painter.setRenderHint(QPainter::Antialiasing, true);
 	painter.setPen(QPen(QColor("#A1A1A1"),1,Qt::SolidLine,Qt::RoundCap));
 	QLinearGradient gradient(0,0,0,20);
-	gradient.setColorAt(0.0, QColor("#FFFFFF"));
-	gradient.setColorAt(1.0, QColor("#CCCCFF"));
+        gradient.setColorAt(0.0, QColor("#FFFFFF"));
+        gradient.setColorAt(1.0, QColor("#CCCCFF"));
 	painter.setBrush(gradient);
 	painter.drawRect(0,0,60,20);
 	painter.drawImage(6,2, backImage);

@@ -29,6 +29,7 @@
 #include <QtGui/QCloseEvent>
 #include <QtNetwork/QNetworkRequest>
 #include <QtNetwork/QNetworkReply>
+#include "HostInfoView.h"
 #include "bookmark.h"
 #include "downloader.h"
 
@@ -73,10 +74,12 @@ class Tab : public QWidget
 	QAction *bookmarkThisTab;
 	QAction *closeTab;
 	QAction *stopAction;
+	QAction *infoAction;
 	private slots:
 	void _closeTab();
 	void _bookmark();
 	void _newWindow();
+	void showInfo();
 	void startDownload(QNetworkRequest request);
 	void startDownload(QNetworkReply *reply);
 	signals:

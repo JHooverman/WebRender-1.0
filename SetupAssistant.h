@@ -6,6 +6,7 @@
 #include <QtCore/QState>
 #include <QtCore/QSignalTransition>
 #include <QtCore/QPropertyAnimation>
+#include <QtGui/QDesktopWidget>
 #include "WelcomeView.h"
 #include "LicenseReader.h"
 #include "DownloadSetup.h"
@@ -17,6 +18,7 @@ class SetupAssistant : public QWidget {
 	SetupAssistant(QWidget *parent = 0);
 	void showAnimated();
 	private:
+        QDesktopWidget *desktopWidget;
 	WelcomeView *welcomeView;
 	LicenseReader *licenseReader;
 	DownloadSetup *downloadSetup;

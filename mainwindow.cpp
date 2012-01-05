@@ -324,18 +324,17 @@ bool MainWindow::setupToolBar()
 	ReloadToolButton = new ToolButton;
 	ReloadToolButton->setIconPath(":/icons/reload-toolbutton.png");
 	GoogleSearch = new QLineEdit;
-	GoogleSearch->setStyleSheet(QString("QLineEdit { border: 2px solid gray; border-radius: 10px; padding: 0 8px; background: white; selection-background-color: darkgray;}"));
+	GoogleSearch->setStyleSheet(QString("QLineEdit { border: 1px solid gray; border-radius: 10px; padding: 0 8px; background: white; selection-background-color: darkgray;}"));
 	GoogleSearch->setPlaceholderText(tr("Google Search"));
 	GoogleSearch->setMaximumWidth(200);
-        GoogleSearch->setFixedHeight(22);
+        GoogleSearch->setFixedHeight(20);
 	MainToolBarLayout = new QHBoxLayout;
-	MainToolBarLayout->setContentsMargins(5,4,5,4);
+        MainToolBarLayout->setContentsMargins(5,3,5,3);
 
 	MainToolBarLayout->addWidget(backForwardButtonGroup);
 	MainToolBarLayout->addWidget(ReloadToolButton);
 	MainToolBarLayout->addWidget(addressBar);
 	MainToolBarLayout->addWidget(GoogleSearch);
-//	MainToolBarLayout->addWidget(menuToolButton);
 	MainToolBar->setLayout(MainToolBarLayout);
 
 	connect(backForwardButtonGroup,SIGNAL(backButtonClicked()),backAction,SLOT(trigger()));

@@ -36,7 +36,9 @@ HEADERS += about.h \
 	   pixmap.h \
 	   SetupAssistant.h \
 	   WebRenderAnimation.h \
-	   WelcomeView.h
+	   WelcomeView.h \
+	   PopOver.h \
+	   HostInfoView.h
 SOURCES += about.cpp \
            addbookmarkwindow.cpp \
            addressbar.cpp \
@@ -64,5 +66,7 @@ SOURCES += about.cpp \
 	   pixmap.cpp \
 	   SetupAssistant.cpp \
 	   WebRenderAnimation.cpp \
-	   WelcomeView.cpp
+	   WelcomeView.cpp \
+	   PopOver.cpp \
+	   HostInfoView.cpp
 RESOURCES += resources.qrc

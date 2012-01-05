@@ -1,7 +1,7 @@
 #include "LicenseReader.h"
 
 LicenseReader::LicenseReader(QWidget *parent) : QWidget(parent) {
-	headingLabel = new QLabel(tr("<b>GNU General Public License</b>"));
+        headingLabel = new QLabel(tr("<b>You must accept the license agreement to use this software product.</b>"));
 	acceptButton = new QPushButton(tr("Accept"));
 	rejectButton = new QPushButton(tr("Reject"));
 	buttonLayout = new QHBoxLayout;

@@ -9,6 +9,8 @@
 #include <QtCore/QSignalTransition>
 #include <QtCore/QPropertyAnimation>
 #include <QtCore/QTimer>
+#include <QtGui/QDesktopWidget>
+#include <QtGui/QCloseEvent>
 
 class About : public QGraphicsView {
 	Q_OBJECT
@@ -17,6 +19,7 @@ class About : public QGraphicsView {
 	public slots:
 	void showAnimated();
 	private:
+        QDesktopWidget *desktopWidget;
 	QPropertyAnimation *animation;
 	QTimer *timer;
 	QGraphicsScene *scene;
@@ -33,6 +36,8 @@ class About : public QGraphicsView {
 	QState *initialState;
 	QState *finalState;
 	QSignalTransition *transition;
+        protected:
+        void closeEvent(QCloseEvent *event);
 };
 
 #endif

@@ -39,10 +39,12 @@ Tab::Tab(QWidget *parent) : QWidget(parent)
 	stopAction = new QAction(tr("Stop"),this);
 	stopAction->setIcon(QIcon(":/icons/stop.png"));
 	stopAction->setVisible(false);
+	infoAction = new QAction(tr("Host Information"),this);
 	tabMenu->addAction(openInNewWindow);
 	tabMenu->addAction(bookmarkThisTab);
 	tabMenu->addAction(closeTab);
 	tabMenu->addAction(stopAction);
+	tabMenu->addAction(infoAction);
 	tabMenu->setWindowOpacity(0.9);
 	setFixedSize(150,20);
 	textSet = false;
@@ -52,11 +54,19 @@ Tab::Tab(QWidget *parent) : QWidget(parent)
 	connect(closeTab,SIGNAL(triggered()),this,SLOT(_closeTab()));
 	connect(openInNewWindow,SIGNAL(triggered()),this,SLOT(_newWindow()));
 	connect(bookmarkThisTab,SIGNAL(triggered()),this,SLOT(_bookmark()));
+	connect(infoAction,SIGNAL(triggered()),this,SLOT(showInfo()));
 	loading = false;
 }
 
 int Tab::currentTab = 0;
 
+void Tab::showInfo()
+{
+	HostInfoView *viewer = new HostInfoView;
+	viewer->setWebView(WebView);
+	viewer->show();
+	viewer->move(mapToGlobal(QPoint(-85,20)));
+}
 void Tab::setText(QString t)
 {
 	text = t;

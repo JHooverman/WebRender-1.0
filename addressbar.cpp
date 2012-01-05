@@ -26,9 +26,9 @@
 AddressBarWidget::AddressBarWidget(QWidget *parent) : QLineEdit(parent)
 {
 
-	setStyleSheet(QString("QLineEdit { border: 2px solid gray; border-radius: 10px; padding: 0 8px; background: white; selection-background-color: darkgray;}"));
+        setStyleSheet(QString("QLineEdit { border: 1px solid gray; border-radius: 10px; padding: 0 8px; background: white; selection-background-color: darkgray;}"));
 	GoArrow = QImage(":/icons/arrow-right.png").scaled(16,16);
-        setFixedHeight(22);
+        setFixedHeight(20);
 }
 
 void AddressBarWidget::paintEvent(QPaintEvent *event)
@@ -40,7 +40,7 @@ void AddressBarWidget::paintEvent(QPaintEvent *event)
 		painter.setRenderHint(QPainter::Antialiasing, true);
 		painter.setPen(QPen(QColor("#DDDDDD"), 1, Qt::SolidLine, Qt::RoundCap));
 		painter.setBrush(QBrush(QColor("#CCCCCC"), Qt::SolidPattern));
-		painter.drawRoundedRect(width() - 43,3,40,height()-7,7,7);
+                painter.drawRoundedRect(width() - 43,3,40,height()-5,7,7);
 		painter.setPen(QPen(Qt::black, 1, Qt::SolidLine, Qt::RoundCap));
 		//painter.drawText(QPoint(width()- 35,16),"Go");
 		painter.drawImage(width()- 30,3,GoArrow);
@@ -50,7 +50,6 @@ void AddressBarWidget::paintEvent(QPaintEvent *event)
 void AddressBarWidget::mouseMoveEvent(QMouseEvent *event)
 {
 	QLineEdit::mouseMoveEvent(event);
-	setCursor(Qt::IBeamCursor);
 	if(isModified())
 	{
 		if(event->pos().x() > (width() - 43))

@@ -4,6 +4,7 @@
 #include <QtCore/QPointF>
 
 About::About(QWidget *parent) : QGraphicsView(parent) {
+        desktopWidget = new QDesktopWidget;
 	scene = new QGraphicsScene;
 	scene->setSceneRect(0,0,500,300);
 	bgPixmap = new Pixmap(QPixmap(":/images/AboutWindow/background.png"));
@@ -131,7 +132,15 @@ About::About(QWidget *parent) : QGraphicsView(parent) {
 }
 
 void About::showAnimated() {
+
 	stateMachine->start();
 	timer->start(100);
 	show();
+        move((desktopWidget->availableGeometry(this).width()/2)- width()/2,(desktopWidget->availableGeometry(this).height()/2)- height()/2);
+}
+
+void About::closeEvent(QCloseEvent *event)
+{
+        stateMachine->stop();
+        event->accept();
 }
