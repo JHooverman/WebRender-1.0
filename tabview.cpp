@@ -26,6 +26,9 @@
 TabView::TabView(QWidget *parent) : QWidget(parent)
 {
 	tabLayout = new QHBoxLayout;
+	buttonLayout = new QHBoxLayout;
+	buttonLayout->setSpacing(0);
+	buttonLayout->setContentsMargins(0,0,2,0);
 	tabLayout->setAlignment(Qt::AlignLeft);
 	tabLayout->setContentsMargins(1,2,5,0);
 	addTabButton = new QPushButton();
@@ -33,7 +36,14 @@ TabView::TabView(QWidget *parent) : QWidget(parent)
 	addTabButton->setIcon(QIcon(":/icons/addtab.png"));
 	addTabButton->setMaximumHeight(20);
 	addTabButton->setMaximumWidth(20);
-	tabLayout->addWidget(addTabButton);
+	menuButton = new QPushButton;
+	menuButton->setFlat(true);
+	menuButton->setIcon(QIcon(":/icons/menu.png"));
+	menuButton->setMaximumHeight(20);
+	menuButton->setMaximumWidth(20);
+	buttonLayout->addWidget(menuButton);
+	buttonLayout->addWidget(addTabButton);
+	tabLayout->addLayout(buttonLayout);
 	connect(addTabButton,SIGNAL(clicked()),this,SIGNAL(addTabPressed()));
 	setLayout(tabLayout);
 }
@@ -44,6 +54,10 @@ void TabView::addTab(Tab *tab)
 	connect(tab,SIGNAL(tabCloseRequested()),tab,SLOT(close()));
 }
 
+void TabView::setMenu(QMenu *menu)
+{
+	menuButton->setMenu(menu);
+}
 
 void TabView::mousePressEvent(QMouseEvent *event)
 {

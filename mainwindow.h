@@ -150,6 +150,7 @@ class MainWindow : public QMainWindow
 	QAction *newTabAction;
 	QAction *openFileAction;
 	QAction *savePageAction;
+	QAction *savePDFAction;
 	QAction *printAction;
 	QAction *quitAction;
 	/* Edit Actions */
@@ -223,7 +224,7 @@ class MainWindow : public QMainWindow
 	void setTab(int x);
 	void completeAddressBar();
 	void reportBugAction_triggered();
-	void popUpMainMenu();
+	void saveAsPDF();
     public slots:
         void updateCompleter();
         void saveBrowserSettings();

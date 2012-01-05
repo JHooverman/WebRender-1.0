@@ -66,10 +66,21 @@ MainWindow::MainWindow()
 	loadHomePage();
 }
 
-
+void MainWindow::saveAsPDF()
+{
+	QPrinter *printer = new QPrinter;
+	printer->setOutputFormat(QPrinter::PdfFormat);
+	QString fileName = QFileDialog::getSaveFileName(this,tr("Save as PDF"),QDir::homePath(),tr("PDF Document (*.pdf)"));
+	if(!fileName.endsWith(".pdf")) fileName + ".pdf";
+	printer->setOutputFileName(fileName);
+	webview->page()->mainFrame()->print(printer);
+	delete printer;
+	
+}
 bool MainWindow::setupCentralWidget()
 {
 	tabView = new TabView;
+	tabView->setMenu(MainMenu);
 	currentTab = new Tab;
 	WebViewStack = new QStackedLayout;
 	WebViewStack->setContentsMargins(0,0,0,0);
@@ -120,13 +131,6 @@ bool MainWindow::setupMenus()
 	return true;
 }
 
-void MainWindow::popUpMainMenu()
-{
-	int y;
-	QPoint position = menuToolButton->mapToGlobal(QPoint(0,0));
-	y = position.y() + 20;
-	MainMenu->popup(QPoint(position.x(), y));
-}
 bool MainWindow::setupActions()
 {
 	newWindowAction = new QAction(tr("New Window"),this);
@@ -142,8 +146,12 @@ bool MainWindow::setupActions()
 	openFileAction->setIcon(QIcon(":/icons/window-new.png"));
 	savePageAction = new QAction(tr("Save Page"),this);
 	savePageAction->setIcon(QIcon(":/icons/save.png"));
-	savePageAction->setToolTip(tr("Opens a web page saved in your computer."));
-	savePageAction->setWhatsThis(tr("Opens a web page saved in your computer."));
+	savePageAction->setToolTip(tr("Saves the web page as HTML."));
+	savePageAction->setWhatsThis(tr("Saves the web page as HTML."));
+	savePDFAction = new QAction(tr("Save as PDF"),this);
+	savePDFAction->setIcon(QIcon(":/icons/save.png"));
+	savePDFAction->setToolTip(tr("Saves the web page as PDF."));
+	savePDFAction->setWhatsThis(tr("Saves the web page as PDF."));
 	printAction = new QAction(tr("Print page"),this);
 	printAction->setToolTip(tr("Prints the page currently viewing."));
 	printAction->setWhatsThis(tr("Prints the page currently viewing."));
@@ -156,6 +164,7 @@ bool MainWindow::setupActions()
 	fileMenu->addAction(newTabAction);
 	fileMenu->addAction(openFileAction);
 	fileMenu->addAction(savePageAction);
+	fileMenu->addAction(savePDFAction);
 	fileMenu->addAction(printAction);
 	fileMenu->addAction(quitAction);
         cutAction = new QAction(tr("Cut"),this);
@@ -314,8 +323,6 @@ bool MainWindow::setupToolBar()
 	backForwardButtonGroup = new BackForwardButtonGroup;
 	ReloadToolButton = new ToolButton;
 	ReloadToolButton->setIconPath(":/icons/reload-toolbutton.png");
-	menuToolButton = new ToolButton;
-	menuToolButton->setIconPath(":/icons/prefs.png");
 	GoogleSearch = new QLineEdit;
 	GoogleSearch->setStyleSheet(QString("QLineEdit { border: 2px solid gray; border-radius: 10px; padding: 0 8px; background: white; selection-background-color: darkgray;}"));
 	GoogleSearch->setPlaceholderText(tr("Google Search"));
@@ -328,13 +335,12 @@ bool MainWindow::setupToolBar()
 	MainToolBarLayout->addWidget(ReloadToolButton);
 	MainToolBarLayout->addWidget(addressBar);
 	MainToolBarLayout->addWidget(GoogleSearch);
-	MainToolBarLayout->addWidget(menuToolButton);
+//	MainToolBarLayout->addWidget(menuToolButton);
 	MainToolBar->setLayout(MainToolBarLayout);
 
 	connect(backForwardButtonGroup,SIGNAL(backButtonClicked()),backAction,SLOT(trigger()));
 	connect(backForwardButtonGroup,SIGNAL(forwardButtonClicked()),forwardAction,SLOT(trigger()));
 	connect(ReloadToolButton,SIGNAL(clicked()),reloadAction,SLOT(trigger()));
-	connect(menuToolButton,SIGNAL(clicked()),this,SLOT(popUpMainMenu()));
 	return true;
 }
 bool MainWindow::loadWidgets()
@@ -750,6 +756,7 @@ bool MainWindow::createConnections()
         connect(historyViewer,SIGNAL(openLinkRequested(QString&)),this,SLOT(goToAddressFromHistory(QString&)));
         connect(openFileAction,SIGNAL(triggered()),this,SLOT(openLocalFile()));
         connect(savePageAction,SIGNAL(triggered()),this,SLOT(saveToLocalFile()));
+	connect(savePDFAction,SIGNAL(triggered()),this,SLOT(saveAsPDF()));
         connect(newWindowAction,SIGNAL(triggered()),this,SLOT(newWindow()));
         connect(quitAction,SIGNAL(triggered()),this,SLOT(close()));
         connect(sourceAction,SIGNAL(triggered()),this,SLOT(viewPageSource()));

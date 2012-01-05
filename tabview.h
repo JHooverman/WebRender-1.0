@@ -22,6 +22,7 @@
 #include <QtGui/QHBoxLayout>
 #include <QtGui/QVBoxLayout>
 #include <QtGui/QPaintEvent>
+#include <QtGui/QMenu>
 #include "tab.h"
 class TabView : public QWidget
 {
@@ -29,9 +30,12 @@ class TabView : public QWidget
 	public:
 	TabView(QWidget *parent = 0);
 	void addTab(Tab *tab);
+	void setMenu(QMenu *menu);
 	private:
 	QHBoxLayout *tabLayout;
+	QHBoxLayout *buttonLayout;
 	QPushButton *addTabButton;
+	QPushButton *menuButton;
 	protected:
 	void mousePressEvent(QMouseEvent *event);
 	void paintEvent(QPaintEvent *event);
