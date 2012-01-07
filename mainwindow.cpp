@@ -611,12 +611,12 @@ void MainWindow::onLinkHovered(QString link,QString /* title */, QString /*textc
     if(!link.isEmpty())
     {
         addressBar->setText(link);
-        addressBar->setStyleSheet(QString("QLineEdit { border: 1px solid gray; border-radius: 10px; padding: 0 8px; background: #DDDDFF; selection-background-color: darkgray; }"));
+        addressBar->setStyleSheet(QString("QLineEdit { border: 1px solid gray; border-radius: 10px; padding-left: 8px; padding-right: 41px; background: #DDDDFF; selection-background-color: darkgray; }"));
     }
     else
     {
         addressBar->setText(webview->url().toString());
-        addressBar->setStyleSheet(QString("QLineEdit { border: 1px solid gray; border-radius: 10px; padding: 0 8px; background: white; selection-background-color: darkgray; }"));
+        addressBar->setStyleSheet(QString("QLineEdit { border: 1px solid gray; border-radius: 10px; padding-left: 8px; padding-right: 41px; background: white; selection-background-color: darkgray; }"));
     }
 }
 

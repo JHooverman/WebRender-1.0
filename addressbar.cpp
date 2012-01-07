@@ -26,7 +26,7 @@
 AddressBarWidget::AddressBarWidget(QWidget *parent) : QLineEdit(parent)
 {
 
-        setStyleSheet(QString("QLineEdit { border: 1px solid gray; border-radius: 10px; padding: 0 8px; background: white; selection-background-color: darkgray;}"));
+        setStyleSheet(QString("QLineEdit { border: 1px solid gray; border-radius: 10px; padding-left: 8px; padding-right: 41px; background: white; selection-background-color: darkgray;}"));
 	GoArrow = QImage(":/icons/arrow-right.png").scaled(16,16);
         setFixedHeight(20);
 }
