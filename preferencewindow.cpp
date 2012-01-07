@@ -148,7 +148,7 @@ PreferenceWindow::PreferenceWindow(Preferences *prefs)
 	mainLayout->addLayout(buttons);
 	mainLayout->setContentsMargins(5,25,5,5);
 	setLayout(mainLayout);
-	setTitle("WebRender Preferences");
+        setTitle(tr("WebRender Preferences"));
 	/* UI setup complete */
 	connect(closeButton,SIGNAL(clicked()),this,SLOT(close()));
 	connect(applyButton,SIGNAL(clicked()), this, SLOT(on_applyButton_clicked()));

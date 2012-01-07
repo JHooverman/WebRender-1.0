@@ -43,7 +43,7 @@ Downloader::Downloader(QWidget *parent)
     mainLayout->addLayout(layout);
     mainLayout->setContentsMargins(5,25,5,5);
     setLayout(mainLayout);
-    setTitle("Downloader");
+    setTitle(tr("Downloader"));
 	finishedDownloading = false;
 
 	configurationDir = QDir::home();
@@ -74,7 +74,7 @@ bool Downloader::handleDownloadRequest(QNetworkAccessManager *manager, QNetworkR
     file = new QFile(absFileName);
     file->open(QIODevice::WriteOnly);
     label->setText(tr("Downloading ") + fileName);
-    setTitle("Downloading");
+    setTitle(tr("Downloading"));
     cancelButton->setText(tr("Cancel"));
     connect(reply,SIGNAL(downloadProgress(qint64,qint64)),this,SLOT(setProgress(qint64,qint64)));
     connect(cancelButton,SIGNAL(clicked()),this,SLOT(abortDownload()));
@@ -115,10 +115,10 @@ void Downloader::finished()
 	file->close();
     	if(reply->error()) {
 		file->remove();
-		setTitle("Download failed.");
+                setTitle(tr("Download failed."));
 		finishedDownloading = false;
 	} else {
-		setTitle("Download finished.");
+                setTitle(tr("Download finished."));
 		finishedDownloading = true;
 	}
         cancelButton->setText(tr("Close"));

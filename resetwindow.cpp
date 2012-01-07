@@ -47,7 +47,7 @@ ResetWindow::ResetWindow()
 	mainLayout->addLayout(buttonLayout);
         mainLayout->setContentsMargins(5,25,5,5);
 	setLayout(mainLayout);
-        setTitle("Reset Browser Settings");
+        setTitle(tr("Reset Browser Settings"));
 	connect(resetButton,SIGNAL(clicked()),this,SLOT(doReset()));
 	connect(closeButton,SIGNAL(clicked()),this,SLOT(close()));
 }

@@ -43,7 +43,7 @@ void HostInfoView::fetchLookupData(const QHostInfo &info)
 	if(info.error() != QHostInfo::NoError) {
 		hostLabel->setText(host);
 		portLabel->setText(tr("Host lookup failed."));
-		IPLabel->setText("No data available");
+                IPLabel->setText(tr("No data available"));
 		return;
 	}
 

@@ -52,7 +52,7 @@ BookmarksWindow::BookmarksWindow()
 	mainLayout->addLayout(buttonsLayout);
 	mainLayout->setContentsMargins(5,25,5,5);
 	setLayout(mainLayout);
-	setTitle("WebRender Bookmarks");
+        setTitle(tr("WebRender Bookmarks"));
 	setupConnections();
 }
 

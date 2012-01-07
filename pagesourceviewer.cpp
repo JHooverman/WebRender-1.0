@@ -33,7 +33,7 @@ SourceView::SourceView()
     mainLayout->addLayout(buttonLayout);
     mainLayout->setContentsMargins(5,25,5,5);
     setLayout(mainLayout);
-    setTitle("Page Source");
+    setTitle(tr("Page Source"));
     resize(500,500);
     connect(closeButton,SIGNAL(clicked()),this,SLOT(close()));
 }

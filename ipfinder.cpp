@@ -41,7 +41,7 @@ IpFinder::IpFinder()
 	setLayout(mainLayout);
 	connect(findButton,SIGNAL(clicked()),this,SLOT(on_findButton_clicked()));
 	connect(closeButton,SIGNAL(clicked()),this,SLOT(close()));
-	setWindowTitle("IP Address Finder");
+        setWindowTitle(tr("IP Address Finder"));
 }
 
 void IpFinder::on_findButton_clicked()

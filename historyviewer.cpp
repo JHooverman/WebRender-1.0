@@ -47,7 +47,7 @@ HistoryViewer::HistoryViewer()
     mainLayout->addLayout(buttonLayout);
     mainLayout->setContentsMargins(5,25,5,5);
     setLayout(mainLayout);
-    setTitle("History");
+    setTitle(tr("History"));
     resize(400,300);
 }
 

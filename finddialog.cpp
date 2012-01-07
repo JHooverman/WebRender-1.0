@@ -32,7 +32,7 @@ FindDialog::FindDialog(QWebPage *page)
 	mainLayout->addWidget(closeButton);
 	mainLayout->setContentsMargins(5,25,5,5);
 	setLayout(mainLayout);
-	setTitle("Find...");
+        setTitle(tr("Find..."));
 	connect(findButton,SIGNAL(clicked()),this,SLOT(on_findButton_clicked()));
 	connect(closeButton,SIGNAL(clicked()),this,SLOT(close()));
 }

@@ -59,7 +59,7 @@ SetupAssistant::SetupAssistant(QWidget *parent) : QWidget(parent) {
 
 	stateMachine->start();
 	setFixedSize(810,610);
-	setWindowTitle("WebRender Setup Assistant");
+        setWindowTitle(tr("WebRender Setup Assistant"));
 	connect(licenseReader, SIGNAL(rejected()),this,SLOT(close()));
 	connect(finishSetup, SIGNAL(setupFinished()), this, SLOT(saveSettings()));
 	connect(downloadSetup, SIGNAL(setupFinished()), finishSetup, SLOT(getReady()));
@@ -77,13 +77,13 @@ void SetupAssistant::saveSettings()
 	QDir homeDir = QDir::home();
 	homeDir.mkdir(".WebRender");
 	if(!homeDir.cd(".WebRender")) {
-		QMessageBox::critical(this,"Error","WebRender is unable to create the configuration directory. Check the permissions and run setup again.");
+                QMessageBox::critical(this,tr("Error"),tr("WebRender is unable to create the configuration directory. Check the permissions and run setup again."));
 		return;
 	}
 	QFile file(homeDir.absoluteFilePath("download.path"));
 	QFile versionFile(homeDir.absoluteFilePath("version.info"));
 	if(!file.open(QIODevice::WriteOnly) || !versionFile.open(QIODevice::WriteOnly)) {
-		QMessageBox::critical(this,"Error","WebRender is unable to save the configuration settings. Check the permissions and run setup again.");
+                QMessageBox::critical(this,tr("Error"),tr("WebRender is unable to save the configuration settings. Check the permissions and run setup again."));
 		return;
 	}
 	QTextStream stream(&file);

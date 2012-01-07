@@ -44,7 +44,7 @@ AddBookmarkWindow::AddBookmarkWindow()
 	mainLayout->addLayout(buttonLayout);
 	mainLayout->setContentsMargins(5,25,5,5);
 	setLayout(mainLayout);
-	setTitle("Add Bookmark");
+        setTitle(tr("Add Bookmark"));
 	setupConnections();
 }
 

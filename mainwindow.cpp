@@ -57,7 +57,7 @@ MainWindow::MainWindow()
 	createConnections();
 	setCentralWidget(centralWidget);
         setDirectory();
-	setWindowTitle("WebRender");
+        setWindowTitle(tr("WebRender"));
 	setWindowIcon(QIcon(":/icons/webrender.png"));
         loadSettings();
 	setupShortcutKeys();
@@ -450,9 +450,9 @@ void MainWindow::setAddressBarUrl(const QUrl &url)//
 void MainWindow::setTitle(const QString &title) //
 {
         if(!title.isEmpty())
-                setWindowTitle(title + QString(" - WebRender"));
+                setWindowTitle(title + tr(" - WebRender"));
         else
-            setWindowTitle(QString("WebRender"));
+            setWindowTitle(tr("WebRender"));
 }
 void MainWindow::setBrowserIcon()
 {
