@@ -70,3 +70,17 @@ SOURCES += about.cpp \
 	   PopOver.cpp \
 	   HostInfoView.cpp
 RESOURCES += resources.qrc
+TRANSLATIONS =  webrender_ar.ts \
+		webrender_zh.ts \
+		webrender_nl.ts \
+		webrender_ml.ts \
+		webrender_hi.ts \
+		webrender_fi.ts \
+		webrender_ko.ts \
+		webrender_fr.ts \
+		webrender_el.ts \
+		webrender_th.ts \
+		webrender_de.ts \
+		webrender_nb.ts \
+		webrender_sv.ts \
+		webrender_ru.ts
