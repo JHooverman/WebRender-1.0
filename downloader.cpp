@@ -110,7 +110,7 @@ void Downloader::abortDownload()
 
 void Downloader::finished()
 {
-	
+	if(!file || !reply) return;
 	file->flush();
 	file->close();
     	if(reply->error()) {
@@ -123,6 +123,7 @@ void Downloader::finished()
 	}
         cancelButton->setText(tr("Close"));
 	reply->deleteLater();
-	delete file;
+	file->deleteLater();
 	file = NULL;
+	reply = NULL;
 }
