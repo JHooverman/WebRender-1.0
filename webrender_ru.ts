@@ -760,6 +760,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="289"/>
+        <source>Report Bugs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="mainwindow.cpp" line="290"/>
         <location filename="mainwindow.cpp" line="291"/>
         <source>Report bug about WebRender</source>

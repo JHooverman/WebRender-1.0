@@ -349,7 +349,7 @@
     <message>
         <location filename="ipfinder.cpp" line="29"/>
         <source>Find</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">തിരയുക</translation>
     </message>
     <message>
         <location filename="ipfinder.cpp" line="30"/>
@@ -758,6 +758,11 @@
         <location filename="mainwindow.cpp" line="285"/>
         <source>Reloads the page currently viewing.</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="289"/>
+        <source>Report Bugs</source>
+        <translation>തെറ്റുകൾ രേഖപ്പെടുത്തുക</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="290"/>

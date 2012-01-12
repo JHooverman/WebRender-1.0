@@ -760,6 +760,11 @@
         <translation>Recharge la page actuellement affichée.</translation>
     </message>
     <message>
+        <location filename="mainwindow.cpp" line="289"/>
+        <source>Report Bugs</source>
+        <translation>Rapport de bugs</translation>
+    </message>
+    <message>
         <location filename="mainwindow.cpp" line="290"/>
         <location filename="mainwindow.cpp" line="291"/>
         <source>Report bug about WebRender</source>

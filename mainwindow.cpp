@@ -286,7 +286,7 @@ bool MainWindow::setupActions()
 	reloadAction->setIcon(QIcon(":/icons/reload.png"));
 	reloadAction->setShortcuts(QKeySequence::Refresh);
 
-	reportBugAction = new QAction("Report Bugs",this);
+	reportBugAction = new QAction(tr("Report Bugs"),this);
 	reportBugAction->setToolTip(tr("Report bug about WebRender"));
 	reportBugAction->setWhatsThis(tr("Report bug about WebRender"));
 	reportBugAction->setIcon(QIcon(":/icons/bugs.png"));
