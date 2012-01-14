@@ -6,32 +6,32 @@
     <message>
         <location filename="about.cpp" line="16"/>
         <source>WebRender</source>
-        <translation type="unfinished"></translation>
+        <translation>WebRender</translation>
     </message>
     <message>
         <location filename="about.cpp" line="18"/>
         <source>Release Candidate 4</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="about.cpp" line="20"/>
         <source>Brought to you by,</source>
-        <translation type="unfinished"></translation>
+        <translation>Autoren und Mitwirkende</translation>
     </message>
     <message>
         <location filename="about.cpp" line="22"/>
         <source>Anand Bose (Software Developer)</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="about.cpp" line="24"/>
         <source>Jaideep Sasi (Mac OS X deployment)</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="about.cpp" line="129"/>
         <source>About WebRender</source>
-        <translation type="unfinished"></translation>
+        <translation>Über WebRender</translation>
     </message>
 </context>
 <context>
@@ -39,27 +39,27 @@
     <message>
         <location filename="addbookmarkwindow.cpp" line="27"/>
         <source>Title:</source>
-        <translation type="unfinished"></translation>
+        <translation>Titel:</translation>
     </message>
     <message>
         <location filename="addbookmarkwindow.cpp" line="28"/>
         <source>Address:</source>
-        <translation type="unfinished"></translation>
+        <translation>Adresse:</translation>
     </message>
     <message>
         <location filename="addbookmarkwindow.cpp" line="29"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Hinzufügen</translation>
     </message>
     <message>
         <location filename="addbookmarkwindow.cpp" line="30"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Schließen</translation>
     </message>
     <message>
         <location filename="addbookmarkwindow.cpp" line="47"/>
         <source>Add Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichen Hinzufügen</translation>
     </message>
 </context>
 <context>
@@ -67,59 +67,59 @@
     <message>
         <location filename="bookmarkswindow.cpp" line="32"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Hinzufügen</translation>
     </message>
     <message>
         <location filename="bookmarkswindow.cpp" line="33"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Schließen</translation>
     </message>
     <message>
         <location filename="bookmarkswindow.cpp" line="34"/>
         <source>Load</source>
-        <translation type="unfinished"></translation>
+        <translation>Datei öffnen</translation>
     </message>
     <message>
         <location filename="bookmarkswindow.cpp" line="35"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Datei speichern</translation>
     </message>
     <message>
         <location filename="bookmarkswindow.cpp" line="36"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Entfernen</translation>
     </message>
     <message>
         <location filename="bookmarkswindow.cpp" line="37"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>öffnen</translation>
     </message>
     <message>
         <location filename="bookmarkswindow.cpp" line="42"/>
         <source>Title</source>
-        <translation type="unfinished"></translation>
+        <translation>Titel</translation>
     </message>
     <message>
         <location filename="bookmarkswindow.cpp" line="43"/>
         <source>Url</source>
-        <translation type="unfinished"></translation>
+        <translation>Url</translation>
     </message>
     <message>
         <location filename="bookmarkswindow.cpp" line="55"/>
         <source>WebRender Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichen</translation>
     </message>
     <message>
         <location filename="bookmarkswindow.cpp" line="139"/>
         <location filename="bookmarkswindow.cpp" line="156"/>
         <source>Save bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichen hinzufügen</translation>
     </message>
     <message>
         <location filename="bookmarkswindow.cpp" line="139"/>
         <location filename="bookmarkswindow.cpp" line="156"/>
         <source>WebRender Bookmark Files (*.wrbm)</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -127,38 +127,38 @@
     <message>
         <location filename="DownloadSetup.cpp" line="4"/>
         <source>Select Directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Verzeichnis wählen</translation>
     </message>
     <message>
         <location filename="DownloadSetup.cpp" line="5"/>
         <source>Next</source>
-        <translation type="unfinished"></translation>
+        <translation>Weiter</translation>
     </message>
     <message>
         <location filename="DownloadSetup.cpp" line="6"/>
         <source>&lt;b&gt;Select your downloads directory&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Wählen Sie Ihre Download-Verzeichnis&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="DownloadSetup.cpp" line="7"/>
         <source>Choose a directory to keep the downloaded files.</source>
-        <translation type="unfinished"></translation>
+        <translation>Wählen Sie ein Verzeichnis für die heruntergeladenen Dateien behalten.</translation>
     </message>
     <message>
         <location filename="DownloadSetup.cpp" line="11"/>
         <location filename="DownloadSetup.cpp" line="66"/>
         <source>Default: </source>
-        <translation type="unfinished"></translation>
+        <translation>Standard:</translation>
     </message>
     <message>
         <location filename="DownloadSetup.cpp" line="63"/>
         <source>Choose a folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Verzeichnis wählen</translation>
     </message>
     <message>
         <location filename="DownloadSetup.cpp" line="68"/>
         <source>Your downloads will be saved to: </source>
-        <translation type="unfinished"></translation>
+        <translation>Ihre Downloads gespeichert werden:</translation>
     </message>
 </context>
 <context>
@@ -167,47 +167,47 @@
         <location filename="downloader.cpp" line="37"/>
         <location filename="downloader.cpp" line="78"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Abbrechen</translation>
     </message>
     <message>
         <location filename="downloader.cpp" line="46"/>
         <source>Downloader</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="downloader.cpp" line="69"/>
         <source>Download the file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Laden Sie die Datei?</translation>
     </message>
     <message>
         <location filename="downloader.cpp" line="69"/>
         <source>Do you really wish to download </source>
-        <translation type="unfinished"></translation>
+        <translation>Wollen Sie wirklich zum Download</translation>
     </message>
     <message>
         <location filename="downloader.cpp" line="76"/>
         <source>Downloading </source>
-        <translation type="unfinished"></translation>
+        <translation>Download</translation>
     </message>
     <message>
         <location filename="downloader.cpp" line="77"/>
         <source>Downloading</source>
-        <translation type="unfinished"></translation>
+        <translation>Download</translation>
     </message>
     <message>
         <location filename="downloader.cpp" line="118"/>
         <source>Download failed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Download fehlgeschlagen.</translation>
     </message>
     <message>
         <location filename="downloader.cpp" line="121"/>
         <source>Download finished.</source>
-        <translation type="unfinished"></translation>
+        <translation>Download beendet.</translation>
     </message>
     <message>
         <location filename="downloader.cpp" line="124"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Schließen</translation>
     </message>
 </context>
 <context>
@@ -215,17 +215,17 @@
     <message>
         <location filename="finddialog.cpp" line="27"/>
         <source>Find</source>
-        <translation type="unfinished"></translation>
+        <translation>Suchen</translation>
     </message>
     <message>
         <location filename="finddialog.cpp" line="28"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Schließen</translation>
     </message>
     <message>
         <location filename="finddialog.cpp" line="35"/>
         <source>Find...</source>
-        <translation type="unfinished"></translation>
+        <translation>Suchen...</translation>
     </message>
 </context>
 <context>
@@ -233,17 +233,17 @@
     <message>
         <location filename="FinishSetup.cpp" line="4"/>
         <source>&lt;b&gt;Congratulations!&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Glückwünsche!&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="FinishSetup.cpp" line="5"/>
         <source>The setup is complete. Surf and enjoy!</source>
-        <translation type="unfinished"></translation>
+        <translation>Das Setup ist abgeschlossen. Surf und genießen!</translation>
     </message>
     <message>
         <location filename="FinishSetup.cpp" line="8"/>
         <source>Finish</source>
-        <translation type="unfinished"></translation>
+        <translation>Ende</translation>
     </message>
 </context>
 <context>
@@ -251,27 +251,27 @@
     <message>
         <location filename="historyviewer.cpp" line="35"/>
         <source>Website</source>
-        <translation type="unfinished"></translation>
+        <translation>Webseiten</translation>
     </message>
     <message>
         <location filename="historyviewer.cpp" line="36"/>
         <source>Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Adresse</translation>
     </message>
     <message>
         <location filename="historyviewer.cpp" line="37"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>Gehen</translation>
     </message>
     <message>
         <location filename="historyviewer.cpp" line="38"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Schließen</translation>
     </message>
     <message>
         <location filename="historyviewer.cpp" line="50"/>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>Verlauf</translation>
     </message>
 </context>
 <context>
@@ -279,64 +279,64 @@
     <message>
         <location filename="HostInfoView.cpp" line="4"/>
         <source>&lt;b&gt;Information&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Informationen&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="HostInfoView.cpp" line="5"/>
         <source>Host: Unknown</source>
-        <translation type="unfinished"></translation>
+        <translation>Host: Unbekannt</translation>
     </message>
     <message>
         <location filename="HostInfoView.cpp" line="6"/>
         <source>Port: Unknown</source>
-        <translation type="unfinished"></translation>
+        <translation>Port: Unbekannt</translation>
     </message>
     <message>
         <location filename="HostInfoView.cpp" line="7"/>
         <source>IP Address: Unknown</source>
-        <translation type="unfinished"></translation>
+        <translation>IP Adresse: Unbekannt</translation>
     </message>
     <message>
         <location filename="HostInfoView.cpp" line="8"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Schließen</translation>
     </message>
     <message>
         <location filename="HostInfoView.cpp" line="30"/>
         <location filename="HostInfoView.cpp" line="50"/>
         <source>Host: </source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="HostInfoView.cpp" line="31"/>
         <location filename="HostInfoView.cpp" line="51"/>
         <source>port: </source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="HostInfoView.cpp" line="32"/>
         <source>IP Address: Looking up</source>
-        <translation type="unfinished"></translation>
+        <translation>IP Adresse: Suche</translation>
     </message>
     <message>
         <location filename="HostInfoView.cpp" line="36"/>
         <source>Sorry. An error occured</source>
-        <translation type="unfinished"></translation>
+        <translation>Entschuldigung. Ein Fehler ist aufgetreten</translation>
     </message>
     <message>
         <location filename="HostInfoView.cpp" line="45"/>
         <source>Host lookup failed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Host-Suche fehlgeschlagen.</translation>
     </message>
     <message>
         <location filename="HostInfoView.cpp" line="46"/>
         <source>No data available</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Daten vorhanden</translation>
     </message>
     <message>
         <location filename="HostInfoView.cpp" line="52"/>
         <source>IP Address: </source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -344,22 +344,22 @@
     <message>
         <location filename="ipfinder.cpp" line="28"/>
         <source>Enter Url:</source>
-        <translation type="unfinished"></translation>
+        <translation>Geben Sie URL:</translation>
     </message>
     <message>
         <location filename="ipfinder.cpp" line="29"/>
         <source>Find</source>
-        <translation type="unfinished"></translation>
+        <translation>Suchen</translation>
     </message>
     <message>
         <location filename="ipfinder.cpp" line="30"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Schließen</translation>
     </message>
     <message>
         <location filename="ipfinder.cpp" line="44"/>
         <source>IP Address Finder</source>
-        <translation type="unfinished"></translation>
+        <translation>IP Adresse Finder</translation>
     </message>
 </context>
 <context>
@@ -367,17 +367,17 @@
     <message>
         <location filename="LicenseReader.cpp" line="4"/>
         <source>&lt;b&gt;You must accept the license agreement to use this software product.&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Sie müssen die Lizenzvereinbarung akzeptieren, um dieses Software-Produkts verwenden.&lt;/b.&gt;</translation>
     </message>
     <message>
         <location filename="LicenseReader.cpp" line="5"/>
         <source>Accept</source>
-        <translation type="unfinished"></translation>
+        <translation>Akzeptieren</translation>
     </message>
     <message>
         <location filename="LicenseReader.cpp" line="6"/>
         <source>Reject</source>
-        <translation type="unfinished"></translation>
+        <translation>Ablehnen</translation>
     </message>
 </context>
 <context>
@@ -386,53 +386,53 @@
         <location filename="mainwindow.cpp" line="60"/>
         <location filename="mainwindow.cpp" line="455"/>
         <source>WebRender</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="73"/>
         <location filename="mainwindow.cpp" line="151"/>
         <source>Save as PDF</source>
-        <translation type="unfinished"></translation>
+        <translation>Speichern als PDF</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="73"/>
         <source>PDF Document (*.pdf)</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="116"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>Datei</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="117"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Bearbeiten</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="118"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>Ansicht</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="119"/>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>Verlauf</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="120"/>
         <source>Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichen</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="121"/>
         <source>Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>Werkzeuge</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="122"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Hilfe</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="136"/>
@@ -443,12 +443,12 @@
         <location filename="mainwindow.cpp" line="138"/>
         <location filename="mainwindow.cpp" line="139"/>
         <source>Open a new WebRender window.</source>
-        <translation type="unfinished"></translation>
+        <translation>Neues Fenster.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="140"/>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Neuer Tab</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="142"/>
@@ -458,7 +458,7 @@
     <message>
         <location filename="mainwindow.cpp" line="143"/>
         <source>Open File</source>
-        <translation type="unfinished"></translation>
+        <translation>Datei öffnen</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="144"/>
@@ -469,7 +469,7 @@
     <message>
         <location filename="mainwindow.cpp" line="147"/>
         <source>Save Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Seite speichern unter</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="149"/>
@@ -486,7 +486,7 @@
     <message>
         <location filename="mainwindow.cpp" line="155"/>
         <source>Print page</source>
-        <translation type="unfinished"></translation>
+        <translation>Drucken</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="156"/>
@@ -499,12 +499,12 @@
         <location filename="mainwindow.cpp" line="161"/>
         <location filename="mainwindow.cpp" line="162"/>
         <source>Quit WebRender</source>
-        <translation type="unfinished"></translation>
+        <translation>Beenden</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="170"/>
         <source>Cut</source>
-        <translation type="unfinished"></translation>
+        <translation>Ausschneiden</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="172"/>
@@ -515,7 +515,7 @@
     <message>
         <location filename="mainwindow.cpp" line="174"/>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopieren</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="176"/>
@@ -526,7 +526,7 @@
     <message>
         <location filename="mainwindow.cpp" line="178"/>
         <source>Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Einfügen</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="180"/>
@@ -537,7 +537,7 @@
     <message>
         <location filename="mainwindow.cpp" line="182"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Löschen</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="184"/>
@@ -548,7 +548,7 @@
     <message>
         <location filename="mainwindow.cpp" line="186"/>
         <source>Find</source>
-        <translation type="unfinished"></translation>
+        <translation>Suchen</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="188"/>
@@ -559,7 +559,7 @@
     <message>
         <location filename="mainwindow.cpp" line="190"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="192"/>
@@ -574,7 +574,7 @@
     <message>
         <location filename="mainwindow.cpp" line="200"/>
         <source>Zoom In</source>
-        <translation type="unfinished"></translation>
+        <translation>Vergrößern</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="201"/>
@@ -585,7 +585,7 @@
     <message>
         <location filename="mainwindow.cpp" line="205"/>
         <source>Zoom Out</source>
-        <translation type="unfinished"></translation>
+        <translation>Verkleinern</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="206"/>
@@ -596,7 +596,7 @@
     <message>
         <location filename="mainwindow.cpp" line="210"/>
         <source>Reset zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Zurücksetzen zoom</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="211"/>
@@ -607,7 +607,7 @@
     <message>
         <location filename="mainwindow.cpp" line="214"/>
         <source>Page Source</source>
-        <translation type="unfinished"></translation>
+        <translation>Seitenquelltext anzeigen</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="215"/>
@@ -618,7 +618,7 @@
     <message>
         <location filename="mainwindow.cpp" line="222"/>
         <source>Go Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Zurück</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="223"/>
@@ -629,7 +629,7 @@
     <message>
         <location filename="mainwindow.cpp" line="227"/>
         <source>Go Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorwärts</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="228"/>
@@ -655,7 +655,7 @@
     <message>
         <location filename="mainwindow.cpp" line="236"/>
         <source>Show All History</source>
-        <translation type="unfinished"></translation>
+        <translation>Vollständigen Verlauf anzeigen</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="237"/>
@@ -666,7 +666,7 @@
     <message>
         <location filename="mainwindow.cpp" line="244"/>
         <source>Add Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichen Hinzufügen</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="245"/>
@@ -677,7 +677,7 @@
     <message>
         <location filename="mainwindow.cpp" line="248"/>
         <source>Manage Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichen bearbeiten</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="249"/>
@@ -688,7 +688,7 @@
     <message>
         <location filename="mainwindow.cpp" line="254"/>
         <source>IP Address Finder</source>
-        <translation type="unfinished"></translation>
+        <translation>IP Adresse Finder</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="256"/>
@@ -703,7 +703,7 @@
     <message>
         <location filename="mainwindow.cpp" line="258"/>
         <source>Reset Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Zurücksetzen browser</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="260"/>
@@ -714,7 +714,7 @@
     <message>
         <location filename="mainwindow.cpp" line="262"/>
         <source>Show Web Inspector</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zeige Web Inspector</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="263"/>
@@ -725,7 +725,7 @@
     <message>
         <location filename="mainwindow.cpp" line="266"/>
         <source>Start Private Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Privaten Modus starten</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="268"/>
@@ -742,12 +742,12 @@
         <location filename="mainwindow.cpp" line="277"/>
         <location filename="mainwindow.cpp" line="278"/>
         <source>About WebRender</source>
-        <translation type="unfinished"></translation>
+        <translation>Über WebRender</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="283"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Neu laden</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="284"/>
@@ -762,7 +762,7 @@
     <message>
         <location filename="mainwindow.cpp" line="289"/>
         <source>Report Bugs</source>
-        <translation type="unfinished"></translation>
+        <translation>Fehler melden</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="290"/>
@@ -793,17 +793,17 @@
     <message>
         <location filename="mainwindow.cpp" line="328"/>
         <source>Google Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Google Suche</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="453"/>
         <source> - WebRender</source>
-        <translation type="unfinished"></translation>
+        <translation> - WebRender</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="524"/>
         <source>Private Browsing started</source>
-        <translation type="unfinished"></translation>
+        <translation>Privater Modus aktiv</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="524"/>
@@ -813,12 +813,12 @@
     <message>
         <location filename="mainwindow.cpp" line="552"/>
         <source>Open file</source>
-        <translation type="unfinished"></translation>
+        <translation>Datei öffnen</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="557"/>
         <source>Save File</source>
-        <translation type="unfinished"></translation>
+        <translation>Datei speichern</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="557"/>
@@ -832,32 +832,32 @@
         <location filename="preferencewindow.cpp" line="30"/>
         <location filename="preferencewindow.cpp" line="136"/>
         <source>Home page</source>
-        <translation type="unfinished"></translation>
+        <translation>Startseite</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="31"/>
         <source>Show last visited page</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeige die letzten besuchten Seite</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="32"/>
         <source>Show home page</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeigen Startseite</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="33"/>
         <source>Home page:</source>
-        <translation type="unfinished"></translation>
+        <translation>Startseite:</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="56"/>
         <source>Miscallaneous Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Verschiedene Einstellungen</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="57"/>
         <source>Automatically load images</source>
-        <translation type="unfinished"></translation>
+        <translation>Grafiken laden</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="58"/>
@@ -867,7 +867,7 @@
     <message>
         <location filename="preferencewindow.cpp" line="59"/>
         <source>Enable DNS prefetch</source>
-        <translation type="unfinished"></translation>
+        <translation>DNS Prefetch erlauben</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="60"/>
@@ -877,7 +877,7 @@
     <message>
         <location filename="preferencewindow.cpp" line="61"/>
         <source>Enable Java Script</source>
-        <translation type="unfinished"></translation>
+        <translation>JavaScript erlauben</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="62"/>
@@ -887,7 +887,7 @@
     <message>
         <location filename="preferencewindow.cpp" line="63"/>
         <source>Enable Java Applets</source>
-        <translation type="unfinished"></translation>
+        <translation>Java zulassen</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="64"/>
@@ -897,7 +897,7 @@
     <message>
         <location filename="preferencewindow.cpp" line="65"/>
         <source>Java script can open windows</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">JavaScript können offene Fenster</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="66"/>
@@ -907,7 +907,7 @@
     <message>
         <location filename="preferencewindow.cpp" line="67"/>
         <source>Java script can access ClipBoard</source>
-        <translation type="unfinished"></translation>
+        <translation>JavaScript darf auf die Zwischenablage zugreifen</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="68"/>
@@ -917,7 +917,7 @@
     <message>
         <location filename="preferencewindow.cpp" line="69"/>
         <source>Enable spatial navigation</source>
-        <translation type="unfinished"></translation>
+        <translation>Spatial navigation aktivieren</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="70"/>
@@ -927,7 +927,7 @@
     <message>
         <location filename="preferencewindow.cpp" line="71"/>
         <source>Print element backgrounds</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Print Element Hintergründe</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="72"/>
@@ -937,7 +937,7 @@
     <message>
         <location filename="preferencewindow.cpp" line="73"/>
         <source>Local content can access files</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Über lokale Inhalte können auf Dateien zugreifen</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="74"/>
@@ -947,7 +947,7 @@
     <message>
         <location filename="preferencewindow.cpp" line="75"/>
         <source>Enable XSS Auditing</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktiviere XSS Prüfung</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="76"/>
@@ -957,7 +957,7 @@
     <message>
         <location filename="preferencewindow.cpp" line="77"/>
         <source>Enable acclerated compositing</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktiviere acclerated compositing</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="78"/>
@@ -967,7 +967,7 @@
     <message>
         <location filename="preferencewindow.cpp" line="79"/>
         <source>Enable site specific quirks</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktiviere site specific quirks</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="80"/>
@@ -977,12 +977,12 @@
     <message>
         <location filename="preferencewindow.cpp" line="103"/>
         <source>Network proxy configuration</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Proxy Konfiguration</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="104"/>
         <source>Enable Proxy</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Aktiviere Proxy Konfiguration</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="105"/>
@@ -1002,7 +1002,7 @@
     <message>
         <location filename="preferencewindow.cpp" line="137"/>
         <source>Miscallaneous</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Sonstiges</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="138"/>
@@ -1012,17 +1012,17 @@
     <message>
         <location filename="preferencewindow.cpp" line="143"/>
         <source>Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>Anwenden</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="144"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Schließen</translation>
     </message>
     <message>
         <location filename="preferencewindow.cpp" line="151"/>
         <source>WebRender Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen</translation>
     </message>
 </context>
 <context>
@@ -1030,42 +1030,42 @@
     <message>
         <location filename="resetwindow.cpp" line="28"/>
         <source>Clear cache</source>
-        <translation type="unfinished"></translation>
+        <translation>Cache löschen</translation>
     </message>
     <message>
         <location filename="resetwindow.cpp" line="29"/>
         <source>Clear cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies löschen</translation>
     </message>
     <message>
         <location filename="resetwindow.cpp" line="30"/>
         <source>Clear browsing history</source>
-        <translation type="unfinished"></translation>
+        <translation>Verlauf löschen</translation>
     </message>
     <message>
         <location filename="resetwindow.cpp" line="31"/>
         <source>Clear bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichen löschen</translation>
     </message>
     <message>
         <location filename="resetwindow.cpp" line="32"/>
         <source>Clear preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen löschen</translation>
     </message>
     <message>
         <location filename="resetwindow.cpp" line="33"/>
         <source>Reset</source>
-        <translation type="unfinished"></translation>
+        <translation>Zurücksetzen</translation>
     </message>
     <message>
         <location filename="resetwindow.cpp" line="34"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Schließen</translation>
     </message>
     <message>
         <location filename="resetwindow.cpp" line="50"/>
         <source>Reset Browser Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Zurücksetzen browser</translation>
     </message>
 </context>
 <context>
@@ -1073,23 +1073,23 @@
     <message>
         <location filename="SetupAssistant.cpp" line="62"/>
         <source>WebRender Setup Assistant</source>
-        <translation type="unfinished"></translation>
+        <translation>Setup-Assistent</translation>
     </message>
     <message>
         <location filename="SetupAssistant.cpp" line="80"/>
         <location filename="SetupAssistant.cpp" line="86"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Fehler</translation>
     </message>
     <message>
         <location filename="SetupAssistant.cpp" line="80"/>
         <source>WebRender is unable to create the configuration directory. Check the permissions and run setup again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Webrender ist nicht in der Lage, die Konfiguration Verzeichnis zu erstellen. Überprüfen Sie die Berechtigungen und führen Sie Setup erneut aus.</translation>
     </message>
     <message>
         <location filename="SetupAssistant.cpp" line="86"/>
         <source>WebRender is unable to save the configuration settings. Check the permissions and run setup again.</source>
-        <translation type="unfinished"></translation>
+        <translation>Webrender ist nicht in der Lage, um die Konfigurationseinstellungen zu speichern. Überprüfen Sie die Berechtigungen und führen Sie Setup erneut aus.</translation>
     </message>
 </context>
 <context>
@@ -1097,12 +1097,12 @@
     <message>
         <location filename="pagesourceviewer.cpp" line="28"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Schließen</translation>
     </message>
     <message>
         <location filename="pagesourceviewer.cpp" line="36"/>
         <source>Page Source</source>
-        <translation type="unfinished"></translation>
+        <translation>Seitenquelltext anzeigen</translation>
     </message>
 </context>
 <context>
@@ -1110,32 +1110,32 @@
     <message>
         <location filename="tab.cpp" line="33"/>
         <source>Open in new Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Öffnen in neuem Fenster</translation>
     </message>
     <message>
         <location filename="tab.cpp" line="35"/>
         <source>Bookmark this tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichen für diesen Tab hinzufügen</translation>
     </message>
     <message>
         <location filename="tab.cpp" line="37"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tab.Schließen</translation>
     </message>
     <message>
         <location filename="tab.cpp" line="39"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Stopp</translation>
     </message>
     <message>
         <location filename="tab.cpp" line="42"/>
         <source>Host Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Seiteninformationen</translation>
     </message>
     <message>
         <location filename="tab.cpp" line="152"/>
         <source>Untitled</source>
-        <translation type="unfinished"></translation>
+        <translation>Unbenannter</translation>
     </message>
 </context>
 </TS>
