@@ -21,12 +21,12 @@
     <message>
         <location filename="about.cpp" line="22"/>
         <source>Anand Bose (Software Developer)</source>
-        <translation></translation>
+        <translation>Anand Bose (Développeur de logiciels)</translation>
     </message>
     <message>
         <location filename="about.cpp" line="24"/>
         <source>Jaideep Sasi (Mac OS X deployment)</source>
-        <translation></translation>
+        <translation>Jaideep Sasi (Mac OS X le déploiement)</translation>
     </message>
     <message>
         <location filename="about.cpp" line="129"/>
@@ -59,7 +59,7 @@
     <message>
         <location filename="addbookmarkwindow.cpp" line="47"/>
         <source>Add Bookmark</source>
-        <translation>Ajouter un signet</translation>
+        <translation>Ajouter un marque page</translation>
     </message>
 </context>
 <context>
@@ -113,7 +113,7 @@
         <location filename="bookmarkswindow.cpp" line="139"/>
         <location filename="bookmarkswindow.cpp" line="156"/>
         <source>Save bookmark</source>
-        <translation>Enregistrer bookmark</translation>
+        <translation>Enregistrer marque page</translation>
     </message>
     <message>
         <location filename="bookmarkswindow.cpp" line="139"/>
@@ -417,7 +417,7 @@
     <message>
         <location filename="mainwindow.cpp" line="119"/>
         <source>History</source>
-        <translation>Histoire</translation>
+        <translation>Historique</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="120"/>
@@ -432,7 +432,7 @@
     <message>
         <location filename="mainwindow.cpp" line="122"/>
         <source>Help</source>
-        <translation>?</translation>
+        <translation>Aide</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="136"/>
@@ -504,7 +504,7 @@
     <message>
         <location filename="mainwindow.cpp" line="170"/>
         <source>Cut</source>
-        <translation>Coupe</translation>
+        <translation>Couper</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="172"/>
@@ -515,7 +515,7 @@
     <message>
         <location filename="mainwindow.cpp" line="174"/>
         <source>Copy</source>
-        <translation>Copie</translation>
+        <translation>Copier</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="176"/>
@@ -548,7 +548,7 @@
     <message>
         <location filename="mainwindow.cpp" line="186"/>
         <source>Find</source>
-        <translation>Trouver</translation>
+        <translation>Rechercher</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="188"/>
@@ -574,7 +574,7 @@
     <message>
         <location filename="mainwindow.cpp" line="200"/>
         <source>Zoom In</source>
-        <translation>Zoomer</translation>
+        <translation>Agrandir</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="201"/>
@@ -585,7 +585,7 @@
     <message>
         <location filename="mainwindow.cpp" line="205"/>
         <source>Zoom Out</source>
-        <translation>Zoom arrière</translation>
+        <translation>Réduire</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="206"/>
@@ -596,7 +596,7 @@
     <message>
         <location filename="mainwindow.cpp" line="210"/>
         <source>Reset zoom</source>
-        <translation>réinitialiser zoomer</translation>
+        <translation>Réinitialiser zoomer</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="211"/>
@@ -607,7 +607,7 @@
     <message>
         <location filename="mainwindow.cpp" line="214"/>
         <source>Page Source</source>
-        <translation>Source de la page</translation>
+        <translation>Code source de la page</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="215"/>
@@ -655,7 +655,7 @@
     <message>
         <location filename="mainwindow.cpp" line="236"/>
         <source>Show All History</source>
-        <translation>Montrer Tous Histoire</translation>
+        <translation>Afficher l&apos;historique</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="237"/>
@@ -666,7 +666,7 @@
     <message>
         <location filename="mainwindow.cpp" line="244"/>
         <source>Add Bookmarks</source>
-        <translation>Ajouter un signet</translation>
+        <translation>Ajouter un marque page</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="245"/>
@@ -677,13 +677,13 @@
     <message>
         <location filename="mainwindow.cpp" line="248"/>
         <source>Manage Bookmarks</source>
-        <translation>Gérer les signets</translation>
+        <translation>Gérer les marque pages</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="249"/>
         <location filename="mainwindow.cpp" line="250"/>
         <source>View, add or remove bookmarks.</source>
-        <translation>Afficher, ajouter ou supprimer des signets.</translation>
+        <translation>Afficher, ajouter ou supprimer des marque pages.</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="254"/>
@@ -1102,7 +1102,7 @@
     <message>
         <location filename="pagesourceviewer.cpp" line="36"/>
         <source>Page Source</source>
-        <translation>Source de la page</translation>
+        <translation>Code source de la page</translation>
     </message>
 </context>
 <context>
