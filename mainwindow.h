@@ -54,6 +54,7 @@
 #include <QtGui/QKeySequence>
 #include "about.h"
 #include "historyviewer.h"
+#include "GoogleSuggest.h"
 #include "pagesourceviewer.h"
 #include "downloader.h"
 #include "preferencewindow.h"

@@ -324,6 +324,7 @@ bool MainWindow::setupToolBar()
 	ReloadToolButton = new ToolButton;
 	ReloadToolButton->setIconPath(":/icons/reload-toolbutton.png");
 	GoogleSearch = new QLineEdit;
+	new GoogleSuggest(GoogleSearch);
 	GoogleSearch->setStyleSheet(QString("QLineEdit { border: 1px solid gray; border-radius: 10px; padding: 0 8px; background: white; selection-background-color: darkgray;}"));
 	GoogleSearch->setPlaceholderText(tr("Google Search"));
 	GoogleSearch->setMaximumWidth(200);

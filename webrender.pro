@@ -8,6 +8,7 @@ DEPENDPATH += .
 INCLUDEPATH += .
 QT += webkit
 QT += network
+QT += xml
 RC_FILE = webrender.rc
 # Input
 HEADERS += about.h \
@@ -38,7 +39,8 @@ HEADERS += about.h \
 	   WebRenderAnimation.h \
 	   WelcomeView.h \
 	   PopOver.h \
-	   HostInfoView.h
+	   HostInfoView.h \
+	   GoogleSuggest.h
 SOURCES += about.cpp \
            addbookmarkwindow.cpp \
            addressbar.cpp \
@@ -68,7 +70,8 @@ SOURCES += about.cpp \
 	   WebRenderAnimation.cpp \
 	   WelcomeView.cpp \
 	   PopOver.cpp \
-	   HostInfoView.cpp
+	   HostInfoView.cpp \
+	   GoogleSuggest.cpp
 RESOURCES += resources.qrc
 TRANSLATIONS =  webrender_ar.ts \
 		webrender_zh.ts \

@@ -26,12 +26,16 @@
 #include <QtCore/QTextStream>
 #include <QtCore/QDir>
 #include <QtCore/QUrl>
+#include <QtCore/QTranslator>
 #include "mainwindow.h"
 #include "SetupAssistant.h"
 
 int main(int argc, char* argv[])
 {
 	QApplication app(argc, argv);
+	QTranslator translator;
+	translator.load("webrender_ml.qm");
+	app.installTranslator(&translator);
         QCoreApplication::setApplicationName(QString("WebRender"));
         QCoreApplication::setOrganizationName(QString("WebRender"));
 	QDir confDir = QDir::home();
