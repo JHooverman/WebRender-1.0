@@ -14,12 +14,15 @@
 #include <QtXml/QDomDocument>
 #include <QtGui/QListWidgetItem>
 #include <QtXml/QDomNode>
+#include <QtCore/QEvent>
+#include <QtGui/QKeyEvent>
 #include <iostream>
 class GoogleSuggest : public QObject {
     Q_OBJECT
 public:
     GoogleSuggest(QLineEdit *parent = 0);
     void setNetworkAccessManager(QNetworkAccessManager *m);
+    bool eventFilter(QObject *object, QEvent *event);
 private:
     QNetworkAccessManager *manager;
     QLineEdit *lineEdit;
