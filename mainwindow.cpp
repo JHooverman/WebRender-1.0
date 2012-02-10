@@ -43,6 +43,7 @@
 #include "downloader.h"
 #include "preferencewindow.h"
 #include "addressbar.h"
+#include "HistoryWriter.h"
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -397,13 +398,13 @@ bool MainWindow::setDirectory()
 }
 bool MainWindow::loadSettings()
 {
-    QFile file(settingsDir.absoluteFilePath("historyfile"));
-    if(!file.open(QIODevice::ReadOnly))
-    {
-        return false;
-    }
-    QDataStream historyFileIn(&file);
-    historyFileIn>> (*history);
+//    QFile file(settingsDir.absoluteFilePath("historyfile"));
+//    if(!file.open(QIODevice::ReadOnly))
+//    {
+//        return false;
+//    }
+//    QDataStream historyFileIn(&file);
+//    historyFileIn>> (*history);
     networkDiskCache = new QNetworkDiskCache(this);
     settingsDir.cd("Cache");
     networkDiskCache->setCacheDirectory(settingsDir.absolutePath());
@@ -472,19 +473,21 @@ void MainWindow::showWebInspector()
 }
 void MainWindow::saveBrowserSettings()
 {
-    QFile file(settingsDir.absoluteFilePath("historyfile"));
-    file.open(QIODevice::WriteOnly);
-    QDataStream historyOutFile(&file);
+	HistoryWriter *historyWriter = new HistoryWriter;//
 	QListIterator<QWebView*> i(WebViewList);
 	QWebHistory *_history;
+	int count, currentHistoryIndex=0;
 	while(i.hasNext())
 	{
 		_history = i.next()->history();
-    		historyOutFile<<(*_history);
-		std::cout<<"Written history\n";
-		if(file.error() != QFile::NoError)
-			std::cout<<"Error occured\n";
+		count = _history->count();
+		currentHistoryIndex = 0;
+		while(currentHistoryIndex<count) {
+			historyWriter->addHistoryItem(_history->itemAt(currentHistoryIndex));
+			currentHistoryIndex++;
+		}
 	}
+	historyWriter->save();
     QFile preferencesFile(settingsDir.absoluteFilePath("preferencesFile"));
     preferences->writeToFile(preferencesFile);
     QFile bookmarksFile(settingsDir.absoluteFilePath("bookmarksFile"));

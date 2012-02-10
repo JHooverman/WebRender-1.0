@@ -40,7 +40,9 @@ HEADERS += about.h \
 	   WelcomeView.h \
 	   PopOver.h \
 	   HostInfoView.h \
-	   GoogleSuggest.h
+	   GoogleSuggest.h \
+	   HistoryWriter.h
+
 SOURCES += about.cpp \
            addbookmarkwindow.cpp \
            addressbar.cpp \
@@ -71,7 +73,9 @@ SOURCES += about.cpp \
 	   WelcomeView.cpp \
 	   PopOver.cpp \
 	   HostInfoView.cpp \
-	   GoogleSuggest.cpp
+	   GoogleSuggest.cpp \
+	   HistoryWriter.cpp
+
 RESOURCES += resources.qrc
 TRANSLATIONS =  webrender_ar.ts \
 		webrender_zh.ts \
